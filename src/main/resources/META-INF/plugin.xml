@@ -1,18 +1,17 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.vinci9527.testplugin</id>
-    <name>test-plugin Template</name>
+    <name>varr</name>
     <vendor>vinci-9527</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.vinci9527.testplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <codeInsight.template.postfixTemplateProvider language="JAVA"
+                                                      implementationClass="com.github.vinci9527.testplugin.postfix.VarPostfixTemplateProvider"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.vinci9527.testplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
