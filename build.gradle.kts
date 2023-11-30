@@ -27,7 +27,7 @@ repositories {
 
 
 dependencies {
-    implementation("commons-io:commons-io:2.11.0")
+    implementation("commons-io:commons-io:2.15.1")
     implementation("org.apache.commons:commons-lang3:3.12.0")
     implementation("com.fasterxml.jackson.core:jackson-core:2.15.1")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.15.1")
