@@ -9,11 +9,11 @@ plugins {
     id("org.jetbrains.qodana") version "0.1.13"
     // Gradle IntelliJ Plugin
     id("org.jetbrains.intellij") version "1.17.1"
-    kotlin("jvm") version "1.8.0"
+    kotlin("jvm") version "2.1.0"
 }
 
 group = "com.intellij"
-version = "0.0.4"
+version = "0.0.5"
 
 tasks.withType<JavaCompile> {
     sourceCompatibility = "17"
@@ -69,7 +69,7 @@ intellij {
     // full list of IntelliJ IDEA EAP releases at https://www.jetbrains.com/intellij-repository/snapshots
     //version "IU-212.4037-EAP-CANDIDATE-SNAPSHOT"
     type.set("IU")
-    version.set("241.15989.150")
+    version.set("251.26927.53")
 
     plugins.set(
             listOf(
