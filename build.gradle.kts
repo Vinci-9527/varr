@@ -69,7 +69,7 @@ intellij {
     // full list of IntelliJ IDEA EAP releases at https://www.jetbrains.com/intellij-repository/snapshots
     //version "IU-212.4037-EAP-CANDIDATE-SNAPSHOT"
     type.set("IU")
-    version.set("251.26927.53")
+    version.set("253.29346.240")
 
     plugins.set(
             listOf(
