@@ -13,11 +13,11 @@ plugins {
 }
 
 group = "com.intellij"
-version = "0.0.5"
+version = "0.0.7"
 
 tasks.withType<JavaCompile> {
-    sourceCompatibility = "17"
-    targetCompatibility = "17"
+    sourceCompatibility = "21"
+    targetCompatibility = "21"
     options.encoding = "UTF-8"
 }
 
@@ -69,7 +69,7 @@ intellij {
     // full list of IntelliJ IDEA EAP releases at https://www.jetbrains.com/intellij-repository/snapshots
     //version "IU-212.4037-EAP-CANDIDATE-SNAPSHOT"
     type.set("IU")
-    version.set("253.29346.240")
+    version.set("253.31033.145")
 
     plugins.set(
             listOf(
@@ -103,7 +103,7 @@ kotlin {
  */
 tasks.compileKotlin {
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "21"
         freeCompilerArgs = listOf("-Xjvm-default=all")
     }
 }
